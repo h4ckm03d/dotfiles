@@ -1,0 +1,84 @@
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.rb]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.go]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[.{vim,zsh}rc]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+[Makefile]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.{ts,js,json,dart,vue}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[.eslintrc]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.{html,xml,css,hbs,mustache,less}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{md,markdown,apib}]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.sh]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[PKGBUILD]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.gql]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.{py,php}]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+

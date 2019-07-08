@@ -1,0 +1,60 @@
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + Return
+	urxvtc
+
+super + control + Return
+	alacritty
+
+XF86Audio{Lower,Raise}Volume
+	ponymix {decrease,increase} 5
+
+XF86AudioMute
+	ponymix toggle
+
+XF86ScreenSaver
+	xautolock -locknow
+
+XF86Audio{Next,Prev,Play}
+	playerctl {next,previous,play-pause}
+
+super + control + alt + r
+	sudo reboot
+
+super + control + alt + q
+	sudo poweroff
+
+super + minus
+	xset r rate 200 55 && notify-send -u normal -a "xset" "Keyboard Repeat Rate" "Keyboard repeat rate updated!"
+
+super + equal
+	nautilus
+
+super + backslash
+	playerctl play-pause
+
+super + bracketright
+	playerctl next
+
+super + bracketleft
+	playerctl previous
+
+super + @space
+	dmenu_run -fn '.SF Compact Rounded-9' -sb '#c00000' -l 1 -i -b
+
+super + control + @space
+	rofi -show run
+
+super + p
+	rofi-pass
+
+super + slash
+	gpaste-menu -fn 'SF Mono-9' -sb '#c00000' -l 30 -i -b
+
+super + s
+	~/.local/bin/capture-screen
+
+super + w
+	~/.local/bin/capture-window
+

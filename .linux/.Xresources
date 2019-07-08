@@ -1,0 +1,110 @@
+! HiDPI
+Xft.dpi: 180
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+! Cursor
+Xcursor.theme: Breeze
+Xcursor.size: 48
+
+! 2bwm
+twobwm.border_width: 8
+twobwm.outer_border: 4
+twobwm.outer_border_color: #1c1c1c
+twobwm.focus_color: #c00000
+twobwm.unfocus_color: #1c1c1c
+twobwm.fixed_color: #fe8019
+twobwm.unkill_color: #b8bb26
+twobwm.fixed_unkill_color: #b16286
+
+! rofi
+rofi.dpi: 180
+
+! URxvt
+URxvt.saveLines: 65535
+URxvt.transparent: false
+URxvt.shading: 20
+URxvt.fading: 0
+URxvt.urgentOnBell: false
+URxvt.visualBell: false
+URxvt.loginShell: true
+URxvt.internalBorder: 3
+URxvt.buffered: true
+URxvt.geometry: 120x32
+
+URxvt.font: xft:Operator Mono:regular:size=10
+URxvt.letterSpace: -2
+URxvt.lineSpace: 0
+
+URxvt.allow_bold: true
+URxvt.scrollStyle: rxvt
+URxvt.scrollBar: false
+
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: true
+URxvt.pointerBlank: true
+
+URxvt.intensityStyles: false
+
+! Perl extensions
+URxvt.perl-ext-common: default,clipboard,keyboard-select
+URxvt.keysym.M-y: perl:clipboard:copy
+URxvt.keysym.M-p: perl:clipboard:paste
+URxvt.keysym.M-C-p: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.copyCommand: xsel -ib
+URxvt.pasteCommand: xsel -ob
+
+! Color scheme
+URxvt.background: #1c1c1c
+URxvt.foreground: #ebdbb2
+URxvt.color0: #282828
+URxvt.color1: #cc241d
+URxvt.color2: #98971a
+URxvt.color3: #d79921
+URxvt.color4: #458588
+URxvt.color5: #b16286
+URxvt.color6: #689d6a
+URxvt.color7: #bdae93
+URxvt.color8: #7c6f64
+URxvt.color9: #fb4934
+URxvt.color10: #b8bb26
+URxvt.color11: #fabd2f
+URxvt.color12: #83a598
+URxvt.color13: #d3869b
+URxvt.color14: #8ec07c
+URxvt.color15: #ebdbb2
+URxvt.color24: #076678
+URxvt.color66: #427b58
+URxvt.color88: #9d0006
+URxvt.color96: #8f3f71
+URxvt.color100: #79740e
+URxvt.color108: #8ec07c
+URxvt.color109: #83a598
+URxvt.color130: #af3a03
+URxvt.color136: #b57614
+URxvt.color142: #b8bb26
+URxvt.color167: #fb4934
+URxvt.color175: #d3869b
+URxvt.color208: #fe8019
+URxvt.color214: #fabd2f
+URxvt.color223: #ebdbb2
+URxvt.color228: #f4e8ba
+URxvt.color229: #fdf4c1
+URxvt.color230: #ffffc8
+URxvt.color234: #1d2021
+URxvt.color235: #282828
+URxvt.color236: #32302f
+URxvt.color237: #3c3836
+URxvt.color239: #504945
+URxvt.color241: #665c54
+URxvt.color243: #7c6f64
+URxvt.color244: #928374
+URxvt.color245: #928374
+URxvt.color246: #a89984
+URxvt.color248: #bdae93
+URxvt.color250: #d5c4a1

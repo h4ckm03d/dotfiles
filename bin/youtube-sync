@@ -1,0 +1,2 @@
+#!/bin/sh
+youtube-dl -i --ignore-config -o "%(title)s.%(ext)s" --download-archive url-archives.txt -f best -a url.txt

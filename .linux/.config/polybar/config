@@ -1,0 +1,110 @@
+[colors]
+background = #222222
+background-alt = #444444
+foreground = #dfdfdf
+foreground-alt = #555555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+[bar/main]
+monitor = ${env:MONITOR:DP3}
+width = 100%
+height = 64
+bottom = true
+radius = 6.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 4
+padding-right = 4
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = Overpass-Mono:pixelsize=22
+font-1 = unifont:fontformat=truetype:size=22
+
+modules-left = ewmh xwindow
+modules-center =
+modules-right = pulseaudio date
+
+tray-position = right
+tray-padding = 2
+tay-maxsize = 48
+tray-transparent = true
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/ewmh]
+type = internal/xworkspaces
+
+format = <label-state>
+
+label-empty =
+label-active = [ %name% ]
+label-active-foreground = #c00000
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:64:...%
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #0a6cf5
+
+label = %date% %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume> <bar-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted = 🔇 muted
+label-muted-foreground = #666
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
