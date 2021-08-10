@@ -39,3 +39,11 @@ luac.out
 *.x86_64
 *.hex
 
+elpa/
+
+*~
+
+bak/
+
+packer_compiled.lua
+
