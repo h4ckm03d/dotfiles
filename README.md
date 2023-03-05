@@ -8,14 +8,14 @@ brew install stow
 
 ## How to use?
 ```
-sh setup.sh
-```
-## What Inside?
-## Neovim
+### setup tmux 
+`sh setup.sh tmux`
 
-## Tmux
+### setup nvim 
+`sh setup.sh nvim`
 
-TODO
+### setup fish
+`sh setup.sh fish`
 
 ## fish
 

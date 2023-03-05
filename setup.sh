@@ -1,11 +1,8 @@
-mkdir -p ~/.config/{nvim,tmux,fish}
+setup ()
+{
+  config=$1
+  mkdir -p "~/.config/${config}"
+  stow -v $config -t "~/.config/${config}"
+}
 
-# setup nvim
-stow -v nvim -t ~/.config/nvim
-
-# setup tmux
-stow -v tmux -t ~/.config/tmux
-
-# setup fish shell
-stow -v fish -t ~/.config/fish
-
+setup $1
