@@ -1,8 +1,7 @@
-setup ()
-{
-  config=$1
-  mkdir -p "~/.config/${config}"
-  stow -v $config -t "~/.config/${config}"
-}
+#!/usr/bin/bash
 
-setup $1
+target="$1"
+mkdir -p "~/.config/${target}"
+stow -v "${target}" -t "~/.config/${target}"
+
+
