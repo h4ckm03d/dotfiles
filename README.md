@@ -7,7 +7,7 @@ brew install stow
 ```
 
 ## How to use?
-```
+
 ### setup tmux 
 `sh setup.sh tmux`
 
